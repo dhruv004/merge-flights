@@ -6,13 +6,11 @@ const auth = "Basic " + new Buffer(username + ":" + password).toString("base64")
 
 const makeRequest = (url, defaultRes) => {
     return new Promise((resolve, reject) => {
-        request({
-            url,
+        request.get(url, {
             timeout: 400,
             json: true,
             headers:{
-                'accept': 'application/json',
-                "Authorization" : auth
+                'accept': 'application/json'
             }
         },(err, res, body) => {
             if(res && res.statusCode === 200){
@@ -23,4 +21,6 @@ const makeRequest = (url, defaultRes) => {
     })
 }
 
-module.exports = makeRequest;
+module.exports = {
+    makeRequest
+}

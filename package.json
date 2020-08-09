@@ -4,7 +4,7 @@
   "description": "Merge flights by calling two sources",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha \"!(node_modules)**/*.test.js\" -w",
     "watch": "nodemon index.js",
     "start": "node index.js"
   },
@@ -15,6 +15,10 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1",
+    "nodemon": "^2.0.4",
+    "nyc": "^15.1.0",
+    "sinon": "^9.0.2"
   }
 }
