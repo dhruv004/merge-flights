@@ -17,4 +17,4 @@ if successful `App listening at http://localhost:3000` should be printed in cons
 ### Running
 
 The project is running at port `3000`.
-The response is at route [http://localhost:3000/flight](http://localhost:3000/flight)
+The response is at route [http://localhost:3000/flights](http://localhost:3000/flights)
