@@ -2,9 +2,9 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-const findFlightsRouter = require('./routes/findFlight');
+const flightsRouter = require('./routers/flights');
 
-app.use('/flight', findFlightsRouter);
+app.use(flightsRouter);
 
 app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`)

@@ -1,5 +1,11 @@
 ## Merge flights
 
+### System Requirements
+
+- node version v10.16.3
+- npm 6.9.0
+- macOS
+
 ### Installation
 
 - clone repo
